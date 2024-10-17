@@ -1,0 +1,179 @@
+/* Estilização do body */
+body {
+    background-color: #f0f0f0; /* Cor de fundo da página */
+    font-family: 'Arial', sans-serif; /* Fonte usada na página */
+    display: flex; /* Usamos flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Faz o body ocupar toda a altura da tela */
+    margin: 0; /* Remove margens padrão do body */
+}
+
+/* Estilização do container principal */
+.container-principal {
+    display: flex; /* Flexbox para organizar os elementos em coluna */
+    flex-direction: column; /* Coloca os elementos um embaixo do outro */
+    background-color: #fff; /* Fundo branco para a calculadora */
+    max-width: 600px; /* Aumenta a largura máxima da calculadora */
+    width: 90%; /* Largura responsiva, ocupa até 90% da tela */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
+    padding: 20px; /* Espaçamento interno da calculadora */
+}
+
+/* Estilização do título */
+.title {
+    text-align: center; /* Centraliza o texto do título */
+    font-size: 28px; /* Tamanho da fonte do título */
+    color: #279277; /* Cor do texto do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilização dos campos de entrada */
+.input {
+    margin-bottom: 15px; /* Espaçamento abaixo de cada input */
+}
+
+/* Estilo dos labels (etiquetas) */
+label {
+    font-size: 18px; /* Tamanho da fonte dos labels */
+    color: #333; /* Cor do texto dos labels */
+}
+
+/* Estilo dos inputs */
+input {
+    border-radius: 5px; /* Arredonda os cantos dos inputs */
+    font-size: 18px; /* Tamanho da fonte dos inputs */
+    width: calc(100% - 20px); /* Largura total menos 20px para espaçamento */
+    padding: 10px; /* Espaçamento interno nos inputs */
+    border: 1px solid #ccc; /* Borda suave */
+    transition: border-color 0.3s; /* Transição suave na mudança de cor da borda */
+    margin: 0 auto; /* Centraliza os inputs */
+    display: block; /* Faz com que os inputs ocupem a linha toda */
+}
+
+/* Estilo dos inputs ao serem selecionados */
+input:focus {
+    border-color: #279277; /* Cor da borda quando o input está focado */
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+/* Estilização do botão */
+button {
+    font-size: 18px; /* Tamanho da fonte do botão */
+    color: #fff; /* Cor do texto do botão */
+    background-color: #279277; /* Cor de fundo do botão */
+    border: none; /* Remove a borda padrão */
+    padding: 10px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background-color 0.3s; /* Transição suave na mudança de cor do botão */
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+    background-color: #237d66; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilização do resultado */
+.resultado {
+    font-size: 20px; /* Tamanho da fonte do resultado */
+    color: #333; /* Cor do texto do resultado */
+    margin-top: 20px; /* Espaço acima da área de resultado */
+    text-align: center; /* Centraliza o texto do resultado */
+}
+
+/* Media Query para dispositivos móveis (até 320px) */
+@media (max-width: 320px) {
+    .container-principal {
+        max-width: 95%; /* Aumenta a largura máxima para ocupar mais espaço em telas pequenas */
+    }
+
+    .title {
+        font-size: 20px; /* Reduz o tamanho do título */
+    }
+
+    button {
+        font-size: 14px; /* Tamanho da fonte do botão */
+    }
+
+    input, label {
+        font-size: 14px; /* Tamanho da fonte dos inputs e labels */
+    }
+}
+
+/* Media Query para tablets (768px) */
+@media (min-width: 321px) and (max-width: 768px) {
+    .container-principal {
+        max-width: 95%; /* Aumenta a largura máxima para ocupar mais espaço em tablets */
+    }
+
+    .title {
+        font-size: 24px; /* Tamanho do título */
+    }
+
+    button {
+        font-size: 16px; /* Tamanho da fonte do botão */
+    }
+
+    input, label {
+        font-size: 16px; /* Tamanho da fonte dos inputs e labels */
+    }
+}
+
+/* Media Query para desktops (até 1280px) */
+@media (min-width: 769px) and (max-width: 1280px) {
+    .container-principal {
+        max-width: 70%; /* Aumenta a largura máxima para ocupar mais espaço em monitores pequenos */
+    }
+
+    .title {
+        font-size: 28px; /* Tamanho do título */
+    }
+
+    button {
+        font-size: 18px; /* Tamanho da fonte do botão */
+    }
+
+    input, label {
+        font-size: 18px; /* Tamanho da fonte dos inputs e labels */
+    }
+}
+
+/* Media Query para telas grandes (1281px a 1920px) */
+@media (min-width: 1281px) and (max-width: 1920px) {
+    .container-principal {
+        max-width: 50%; /* Largura máxima para ocupar mais espaço em monitores grandes */
+    }
+
+    .title {
+        font-size: 30px; /* Tamanho do título */
+    }
+
+    button {
+        font-size: 22px; /* Tamanho da fonte do botão */
+    }
+
+    input, label {
+        font-size: 20px; /* Tamanho da fonte dos inputs e labels */
+    }
+}
+
+/* Media Query para telas Full HD (1920px e acima) */
+@media (min-width: 1920px) {
+    .container-principal {
+        max-width: 600px; /* Define uma largura fixa maior para telas Full HD */
+    }
+
+    .title {
+        font-size: 32px; /* Tamanho do título */
+    }
+
+    button {
+        font-size: 24px; /* Tamanho da fonte do botão */
+    }
+
+    input, label {
+        font-size: 22px; /* Tamanho da fonte dos inputs e labels */
+    }
+}
