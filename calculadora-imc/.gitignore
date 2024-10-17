@@ -1,0 +1,15 @@
+# Ignore a pasta de dependências
+node_modules/
+
+# Ignore arquivos de log
+npm-debug.log
+
+# Ignore arquivos do sistema
+.DS_Store
+
+# Ignore arquivos de configuração do IDE
+.vscode/
+.idea/
+
+# Ignore arquivos de ambiente
+.env
